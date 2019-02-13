@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .logo {
+    height: 62px !important;
+}
+
+  /* HEADER */
+.green {
+    background-color: #006518 !important;
+}
+
+/* FOOTER */
+
+footer {
+    position: absolute; bottom: 0; left: 0; right: 0
+}
+
+.box {
+  color: white;
+  padding: 20px;
+  /* display: none; */
+  margin-top: 20px;
+  
+}
+.public { 
+  background: #ff0000; 
+}
+
+
+.prive { 
+  background: #228B22; 
+}
+
+.devis-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 15px;
+}
+
+  .select-button {
+    margin-top: 30px;
+  }

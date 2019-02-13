@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel='stylesheet' href="css/devis.css"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="utf-8" />
+      <title>Nestranny Conseil - Devis</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- script d'affichage de div en fonction du select -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("select").change(function(){
+                $(this).find("option:selected").each(function(){
+                    var optionValue = $(this).attr("value");
+                    if(optionValue){
+                        $(".box").not("." + optionValue).hide();
+                        $("." + optionValue).show();
+                    } else{
+                        $(".box").hide();
+                    }
+                });
+            }).change();
+        });
+    </script>
+    </head>
+
+    <body>
+
+        <!-- NAVBAR PART -->
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown" class="dropdown-content"><li><a href="public.html">Secteur public</a></li>
+            <li><a href="prive.html">Secteur privé</a></li>
+            <li><a href="#">Conseil et audit</a></li>
+        </ul>
+
+        <!-- navbar -->
+        <nav class="green" role="navigation"> 
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo"><img src="img/logo-détouré.png" alt="logo nestranny" class="logo"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Accueil</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" data-target="dropdown">Nos missions<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="contact.html">Contactez-nous</a></li>
+                </ul>
+            </div>
+        </nav>
+            
+        <!-- sidenav structure  --> 
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" data-target="dropdown">Nos missions<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+        </ul>
+
+        <!-- select et div -->
+        <div class='devis-wrapper row'>
+            
+            <div class="select-button input-field col s12 offset-m3 m6 offset-l4 l4 ">
+                <select>
+                    <option value="" disabled selected>Vous êtes...</option>
+                    <option value="public">Une collectivité</option>
+                    <option value="prive">Une entreprise</option>
+                </select>
+            </div>
+            
+            <div class="public box s12">You have selected <strong>PUBLIC</strong> so i am here</div>
+            <div class="prive box s12">You have selected <strong>PRIVE</strong> so i am here</div>
+        </div>
+
+
+        
+
+        <!-- FOOTER -->
+
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                © 2018 Copyright Nestranny Conseil
+                </div>
+            </div>  
+        </footer>
+
+
+
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      
+      <script>
+          $(document).ready(() => {
+            $('.sidenav').sidenav();
+            $(".dropdown-trigger").dropdown({hover : false});
+            $('.parallax').parallax();
+            $('select').formSelect();
+            });
+      </script>
+      
+      
+     
+     
+      
+    </body>
+  </html>

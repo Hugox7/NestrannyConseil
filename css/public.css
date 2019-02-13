@@ -1,0 +1,47 @@
+body {
+    margin-top: 65px;
+}
+
+
+.public-title {
+    display: flex;
+    justify-content: center;
+}
+
+.public-text {
+    display: flex;
+    justify-content: center;
+}
+
+.collection-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.mission-name {
+    font-weight: bold;
+}
+
+.modal-title {
+    color: #006518;
+}
+
+.modal-img {
+    height:45px;
+}
+
+.modal-subtitle {
+    background-color: #006518;
+    width: auto;
+    color: white;
+}
+
+.modal-text-bold {
+    font-weight: bold;
+}
+
+.button-devis {
+    display: flex;
+    justify-content: center;
+} 
