@@ -11,7 +11,7 @@ body {
 .public-text {
     display: flex;
     justify-content: center;
-    p style='text-align: justify'
+    style='text-align: justify'
 }
 
 .collection-item {
