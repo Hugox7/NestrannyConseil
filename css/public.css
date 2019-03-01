@@ -45,3 +45,11 @@ body {
     display: flex;
     justify-content: center;
 } 
+
+.italic {
+    font-style: italic;
+}
+
+.modal-text {
+    text-align: justify; 
+}
