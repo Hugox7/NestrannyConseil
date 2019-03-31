@@ -2819,18 +2819,18 @@ video.responsive-video {
   height: 500px;
 }
 
-.parallax-container .parallax {
+/* .parallax-container .parallax {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
-}
+} */
 
 .parallax-container .parallax img {
   opacity: 0;
-  /* position: absolute; */
+  position: absolute;
   left: 50%;
   bottom: 0;
   min-width: 100%;
