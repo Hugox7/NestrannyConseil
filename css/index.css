@@ -1,11 +1,9 @@
 .section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 2rem 2rem;
 }
 
 .section-cards {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 2rem 2rem;
     background-color: #FBF6F6;
 }
 
@@ -73,15 +71,19 @@
 
 /* HEADER */
 .white {
-    /* background-color: #006518 !important; */
-    /*position: fixed !important;
+    background-color: #006518 !important; 
+    /* position: fixed !important;
     top:0px; 
     background: rgba(0, 0, 0, 0.2) !important;
     z-index: 150;  */
 }
 
+.nav-wrapper {
+
+}
+
 li a {
-   color: #3B3A3A !important;
+   /* color: #3B3A3A !important; */
 }
 
 li:hover {
@@ -130,6 +132,14 @@ li a:hover {
     margin: 20px 0px;
 }
 
+.icon-block p {
+    font-size: 22px !important;
+}
+
+.icon-block h5 {
+    font-size: 29px !important;
+}
+
 .picto-container {
     margin: 30px auto;
 
@@ -143,6 +153,10 @@ li a:hover {
     text-align: center;
 }
 
+.icon-container {
+    padding: 3vw !important;
+}
+
 
 
 
@@ -150,118 +164,7 @@ li a:hover {
 
 /* ABOUT */
 
-.image-duo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
-/* Media queries pour la taille de l'image et les slogans */
-@media screen and (min-width: 1439px) {
-    .duo {
-        height: 450px;
-        max-width: 100%;
-    }
-    .slogan {
-        font-style: italic;
-        color: grey;
-        font-size: 17px;
-    }
-    .nom {
-        color: #00A38A; 
-        font-weight: bold;
-        font-size: 18px;
-    }
-    .regis {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-end; */
-        text-align: right;
-        margin-top: 100px;
-    }
-    .steph {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-start; */
-        text-align: left;
-        margin-top: 180px;
-    }
-    .section-about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .title-about {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1439px) {
-    .duo {
-        height: 300px;
-        max-width: 100%;
-    }
-    .slogan {
-        font-style: italic;
-        color: grey;
-        font-size: 14px;
-    }
-    .nom {
-        color: #00A38A; 
-        font-weight: bold;
-        font-size: 15px;
-    }
-    .regis {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-end; */
-        text-align: right;
-        margin-top: 50px;   
-    }
-    .steph {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-start; */
-        text-align: left;
-        margin-top: 70px;  
-    }
-    .section-about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .title-about {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 999px) {
-    .section-about {
-        display: none;
-    }
-}
-/* Fin des media queries */
-
-
-
-
-
-.regisetsteph {
-    
-}
 
 
 
