@@ -1,0 +1,33 @@
+body {
+    margin-top: 65px;
+}
+
+
+.modal-text-bold {
+    font-weight: bold;
+}
+
+.button-devis {
+    display: flex;
+    justify-content: center;
+} 
+
+.italic {
+    font-style: italic;
+}
+
+.modal-text {
+    text-align: justify; 
+}
+
+.list-title {
+    background-color: #006518;
+    width: auto;
+    color: white;
+}
+
+.audit-title {
+    display: flex;
+    justify-content: center;
+
+}
