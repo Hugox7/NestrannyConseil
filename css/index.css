@@ -6,13 +6,12 @@
 .section-cards {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: #FBF6F6;
+    background-color: #ECF0F1;
 }
 
 .logo {
     height: 62px !important;
 }
-
 
 .img-home {
     /* min-height: 100vh;
@@ -66,6 +65,33 @@
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.title-prive {
+    color: orange !important;
+}
+
+.title-public {
+background-color: darkcyan !important;
+}
+
+.title-conseil {
+    color: green !important;
+}
+
+.index-text {
+    width: 100%;
+    padding: 0 20vw;
+}
+
+.index-text p {
+    text-align: center;
+    font-size: 1.2vw;
+    color: #677179;
+}
+
+.card-reveal p {
+    text-align: justify;
 }
 
 
@@ -157,103 +183,48 @@ li a:hover {
     flex-direction: column;
 }
 
-/* Media queries pour la taille de l'image et les slogans */
-@media screen and (min-width: 1439px) {
-    .duo {
-        height: 450px;
-        max-width: 100%;
-    }
-    .slogan {
-        font-style: italic;
-        color: grey;
-        font-size: 17px;
-    }
-    .nom {
-        color: #00A38A; 
-        font-weight: bold;
-        font-size: 18px;
-    }
-    .regis {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-end; */
-        text-align: right;
-        margin-top: 100px;
-    }
-    .steph {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-start; */
-        text-align: left;
-        margin-top: 180px;
-    }
-    .section-about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .title-about {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
+.text-histo {
+    text-align: justify;
+    width: 100%;
+    padding: 0 20vw;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1439px) {
-    .duo {
-        height: 300px;
-        max-width: 100%;
-    }
-    .slogan {
-        font-style: italic;
-        color: grey;
-        font-size: 14px;
-    }
-    .nom {
-        color: #00A38A; 
-        font-weight: bold;
-        font-size: 15px;
-    }
-    .regis {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-end; */
-        text-align: right;
-        margin-top: 50px;   
-    }
-    .steph {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-start; */
-        text-align: left;
-        margin-top: 70px;  
-    }
-    .section-about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.image-part {
     
-    .title-about {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
 }
 
-@media screen and (max-width: 999px) {
-    .section-about {
-        display: none;
-    }
+.image-wrapper {
+    height: 30vw;
+    /*margin-left: 2vw;*/
 }
-/* Fin des media queries */
+
+.image-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.text-part p {
+    padding: 0vw 4vw;
+    text-align: justify;
+}
+
+.section-about {
+    background-color: #ECF0F1;
+}
+
+.line {
+    /*padding: 2vw 0vw;*/
+}
+
+
+
+
 
 
 
