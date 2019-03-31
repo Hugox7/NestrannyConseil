@@ -11,23 +11,23 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta charset="utf-8" />
       <title>Nestranny Conseil - Devis</title>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!-- script d'affichage de div en fonction du select -->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("select").change(function(){
-                $(this).find("option:selected").each(function(){
-                    var optionValue = $(this).attr("value");
-                    if(optionValue){
-                        $(".box").not("." + optionValue).hide();
-                        $("." + optionValue).show();
-                    } else{
-                        $(".box").hide();
-                    }
-                });
-            }).change();
-        });
-    </script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <!-- script d'affichage de div en fonction du select -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("select").change(function(){
+                    $(this).find("option:selected").each(function(){
+                        var optionValue = $(this).attr("value");
+                        if(optionValue){
+                            $(".box").not("." + optionValue).hide();
+                            $("." + optionValue).show();
+                        } else{
+                            $(".box").hide();
+                        }
+                    });
+                }).change();
+            });
+        </script>
     </head>
 
     <body>
@@ -71,8 +71,38 @@
                 </select>
             </div>
             
-            <div class="public box s12">You have selected <strong>PUBLIC</strong> so i am here</div>
-            <div class="prive box s12">You have selected <strong>PRIVE</strong> so i am here</div>
+            <div class="public box">
+
+                    <div class="input-field col s12">
+                        <select multiple>
+                            <option value="" disabled selected>Formations secteur public</option>
+                            <option value="1">Initiation aux finances locales</option>
+                            <option value="2">Compta d'engagement</option>
+                            <option value="3">M14 Compta communale</option>
+                            <option value="4">Les AP-CP</option>
+                            <option value="5">Monter son budget de service</option>
+                            <option value="6">Le DOB</option>
+                            <option value="7">Budget service scolaire et caisse écoles</option>
+                            <option value="8">Budget service enfance et petite enfance</option>
+                            <option value="9">Budget services techniques</option>
+                            <option value="10">Les régies d'avances et de recettes</option>
+                            <option value="11">Outils du contrôle de gestion</option>
+                            <option value="12">Les tableaux de bord</option>
+                            <option value="13">Compta analytique et coûts</option>
+                            <option value="14">Le guide des procédures</option>
+                            <option value="15">L'exécution financière des marchés publics</option>
+                            <option value="16">Les marchés à procédure adaptée</option>
+                            <option value="17">La gestion du patrimoine</option>
+                            <option value="18">Le contrôle financier des associations</option>
+                            <option value="19">Analyse et stratégie financière</option>
+                            <option value="20">Elaborer le budget d'une commune de moins de 5K</option>
+                        </select>
+                        <label>Choisissez la ou les formation(s) qui vous intéresse(nt)</label>
+                        </div>
+
+            </div>
+
+            <div class="prive box"></div>
         </div>
 
 

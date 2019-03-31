@@ -31,19 +31,19 @@ footer {
   
 }
 .public { 
-  background: #ff0000; 
+ 
 }
 
 
 .prive { 
-  background: #228B22; 
+   
 }
 
 .devis-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 15px;
+  padding: 3vw 3vw;
 }
 
   .select-button {

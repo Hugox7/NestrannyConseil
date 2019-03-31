@@ -1,64 +1,127 @@
 .section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 2rem 2rem;
+}
+
+.section-cards {
+    padding: 2rem 2rem;
+    background-color: #ECF0F1;
 }
 
 .logo {
     height: 62px !important;
 }
 
-
 .img-home {
     /* min-height: 100vh;
     width: 100vw; */
 }
 
-.cards {
-    /* margin: 70px 25px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
+/* CARDS */
 
+.card {
+   
 }
-
-.card-list {
-     
-}
-
-.card-title {
-    font-weight: bold !important;
-    text-shadow: 2px 2px 2px black !important;
-}
-
-.img-card {
-    overflow: hidden;
-}
-
-/* .nocard {
-    
-} */
 
 .title-card {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+}
+
+.card-container {
+    padding: 2vw !important;
+}
+
+.card-image {
+    position: relative;
+}
+
+#color-public {
+    height: 6px;
+    background-color: darkcyan;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#color-prive {
+    height: 6px;
+    background-color: orange;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#color-conseil {
+    height: 6px;
+    background-color: green;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.title-prive {
+    color: orange !important;
+}
+
+.title-public {
+background-color: darkcyan !important;
+}
+
+.title-conseil {
+    color: green !important;
+}
+
+.index-text {
+    width: 100%;
+    padding: 0 20vw;
+}
+
+.index-text p {
+    text-align: center;
+    font-size: 1.2vw;
+    color: #677179;
+}
+
+.card-reveal p {
+    text-align: justify;
 }
 
 
 
 
 /* HEADER */
-.green {
-    /* background-color: #006518 !important; */
-    position: fixed !important;
-    top:0px;
+.white {
+    background-color: #006518 !important; 
+    /* position: fixed !important;
+    top:0px; 
     background: rgba(0, 0, 0, 0.2) !important;
-    z-index: 150;
+    z-index: 150;  */
+}
+
+.nav-wrapper {
+
+}
+
+li a {
+   /* color: #3B3A3A !important; */
 }
 
 li:hover {
-    background: #006518;
+    background-color: #008135 !important;
+}
+
+li a:hover {
+    color: #ffffff !important;
+}
+
+.sidenav-trigger {
+   color: #008135 !important;
 }
 
 
@@ -77,6 +140,10 @@ li:hover {
     color: white !important;
 }
 
+#download-button:hover {
+    background-color: #008135 !important;
+}
+
 /* ICON PART */
 
 .icon-color {
@@ -89,6 +156,14 @@ li:hover {
     justify-content: center;
     align-items: center;
     margin: 20px 0px;
+}
+
+.icon-block p {
+    font-size: 22px !important;
+}
+
+.icon-block h5 {
+    font-size: 29px !important;
 }
 
 .picto-container {
@@ -104,6 +179,50 @@ li:hover {
     text-align: center;
 }
 
+.icon-container {
+    padding: 3vw !important;
+}
+
+.text-histo {
+    text-align: justify;
+    width: 100%;
+    padding: 0 20vw;
+}
+
+.image-part {
+    
+}
+
+.image-wrapper {
+    height: 30vw;
+    /*margin-left: 2vw;*/
+}
+
+.image-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.text-part p {
+    padding: 0vw 4vw;
+    text-align: justify;
+}
+
+.section-about {
+    background-color: #ECF0F1;
+}
+
+.line {
+    /*padding: 2vw 0vw;*/
+}
+
+
 
 
 
@@ -111,118 +230,7 @@ li:hover {
 
 /* ABOUT */
 
-.image-duo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
-/* Media queries pour la taille de l'image et les slogans */
-@media screen and (min-width: 1439px) {
-    .duo {
-        height: 450px;
-        max-width: 100%;
-    }
-    .slogan {
-        font-style: italic;
-        color: grey;
-        font-size: 17px;
-    }
-    .nom {
-        color: #00A38A; 
-        font-weight: bold;
-        font-size: 18px;
-    }
-    .regis {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-end; */
-        text-align: right;
-        margin-top: 100px;
-    }
-    .steph {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-start; */
-        text-align: left;
-        margin-top: 180px;
-    }
-    .section-about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .title-about {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1439px) {
-    .duo {
-        height: 300px;
-        max-width: 100%;
-    }
-    .slogan {
-        font-style: italic;
-        color: grey;
-        font-size: 14px;
-    }
-    .nom {
-        color: #00A38A; 
-        font-weight: bold;
-        font-size: 15px;
-    }
-    .regis {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-end; */
-        text-align: right;
-        margin-top: 50px;   
-    }
-    .steph {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start;
-        align-items: flex-start; */
-        text-align: left;
-        margin-top: 70px;  
-    }
-    .section-about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .title-about {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 999px) {
-    .section-about {
-        display: none;
-    }
-}
-/* Fin des media queries */
-
-
-
-
-
-.regisetsteph {
-    
-}
 
 
 
